@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'
-import Portfolio from './components/portfolio';
+import Header from './components/Header';
+import About from './components/About';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div><Portfolio /></div>
+    <>
+      <header className='headers'><Header /></header>
+      <div className='bodys'><About /></div>
+    </>
     // <>
     //   <div>
     //     <a href="https://vitejs.dev" target="_blank">
