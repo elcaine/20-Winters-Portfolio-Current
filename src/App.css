@@ -33,6 +33,17 @@
   position: relative;
 }
 
+footers {
+	width: 100%;
+	border: .25rem solid var(--contrast--yellow);
+	text-align: center;
+	background-image: url("../images/header-background.jpg");
+  }
+
+
+
+
+
 
 body{ 
 	font-family: sans-serif; 

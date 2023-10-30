@@ -1,8 +1,8 @@
-import { useState } from "react";
-import headshot from "../assets/headshot.jpg";  // Not completed, but see below.
+// import { useState } from "react";
+import headshot from "../assets/headshot.jpg";
 
 function About() {
-    const [portfolio, setPortfolio] = useState();
+    // const [portfolio, setPortfolio] = useState();
     
 
     return (
@@ -14,7 +14,7 @@ function About() {
         
     <div>
       <section id="about">
-        <img src="../assets/headshot.jpg" alt="Headshot of Caine Winters"/>
+        <img src={headshot} alt="Headshot of Caine Winters"/>
         <h2>About</h2>
         <p>
           I have aleady had a long and rewarding career in the hospitality industry.  I decided in 2019 that

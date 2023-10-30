@@ -1,5 +1,6 @@
 import React from "react";
-import background from "../assets/background.svg";
+// import background from "../assets/background.svg";
+import background from "../assets/glasses.jpg";
 
 const Header = () => {
     return (
