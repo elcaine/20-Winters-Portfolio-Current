@@ -1,11 +1,20 @@
 import React from "react";
 // import background from "../assets/background.svg";
 import background from "../assets/glasses.jpg";
+import {
+	Box,
+	FooterContainer,
+	Row,
+	Column,
+	FooterLink,
+	Heading,
+} from "./FooterStyles";
 
 const Header = () => {
     return (
       <>
       
+<Box style={{ backgroundImage: `url(${background})` }}>
     {/* <header>  */}
         <nav className="navbar" style={{ backgroundImage: `url(${background})` }}> 
             <div className="logo"> 
@@ -32,6 +41,7 @@ const Header = () => {
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
         </div> */}
+</Box>
       </>
     )
 }

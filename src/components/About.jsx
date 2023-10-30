@@ -17,8 +17,8 @@ function About() {
         <img src={headshot} alt="Headshot of Caine Winters"/>
         <h2>About</h2>
         <p>
-          I have aleady had a long and rewarding career in the hospitality industry.  I decided in 2019 that
-          I wanted to achieve my long-desired goal of completing my college education.  I earned my 
+          I have aleady had a rewarding career in the hospitality industry.  I decided in 2019 that
+          I wanted to achieve my long-desired goal of completing my college education, so I returned to shcool.  I earned my 
           Bachelor of Science in December 2022 from the University of Florida with a major in Computer Science.
         </p>  
       </section>
@@ -28,6 +28,3 @@ function About() {
 }
 
 export default About;
-
-// TODO:  See about React <img /> approach (might not be as typed here)
-// TODO IDEA!!!!! ==> uses Glasses painting!!!!
