@@ -13,9 +13,12 @@ import {
 	Heading,
 } from "./FooterStyles";
 
+
+
 const Footer = () => {
 	return (
-		<Box style={{ backgroundImage: `url(${background})` }}>
+		<div style={{ backgroundImage: `url(${background})` }}>
+		{/* <Box> */}
 			<h1
 				style={{
 					color: "green",
@@ -25,7 +28,7 @@ const Footer = () => {
 			>
 				Connect with Caine Winters
 			</h1>
-			<FooterContainer>
+			{/* <FooterContainer> */}
 				<Row>
 					<Column>
 						<FooterLink href="tel:4076942540">(407) 694-2540</FooterLink>
@@ -40,8 +43,9 @@ const Footer = () => {
 						<FooterLink href={resumeDanielCaineWinters} target="_blank">Resume</FooterLink>
 					</Column>
 				</Row>
-			</FooterContainer>
-		</Box>
+			{/* </FooterContainer> */}
+		{/* </Box> */}
+		</div>
 	);
 };
 export default Footer;

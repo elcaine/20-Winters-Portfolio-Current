@@ -16,6 +16,13 @@
 	transition: all 0.4s; 
 } 
 
+main {
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+	margin-top: 25px;
+}
+
 .headers {
     position: fixed;
     top: 0;
@@ -28,17 +35,19 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.bodys {
+/* .bodys {
   padding: 4em 2em 50em 2em;
   position: relative;
-}
+} */
 
-footers {
+/* .footers {
 	width: 100%;
 	border: .25rem solid var(--contrast--yellow);
 	text-align: center;
 	background-image: url("../images/header-background.jpg");
-  }
+	bottom:0;
+	left:0;
+  } */
 
 
 

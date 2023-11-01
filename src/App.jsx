@@ -11,11 +11,8 @@ function App() {
   return (
     <>
       <header className='headers'><Header /></header>
-      
-      {/* <div className='bodys'><About /></div> */}
       <main className='mx-3'><Outlet /></main>
-
-      <div className='footers'><Footer /></div>
+      <footer><Footer /></footer>
     </>
   )
 }
