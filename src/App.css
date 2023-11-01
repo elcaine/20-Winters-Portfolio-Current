@@ -16,6 +16,13 @@
 	transition: all 0.4s; 
 } 
 
+main {
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+	margin-top: 25px;
+}
+
 .headers {
     position: fixed;
     top: 0;
@@ -23,15 +30,28 @@
     width: 100%;
     z-index: 999;
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-    background-color: #ffffff !important;
+    /* background-color: #ffffff !important; */
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.bodys {
+/* .bodys {
   padding: 4em 2em 50em 2em;
   position: relative;
-}
+} */
+
+/* .footers {
+	width: 100%;
+	border: .25rem solid var(--contrast--yellow);
+	text-align: center;
+	background-image: url("../images/header-background.jpg");
+	bottom:0;
+	left:0;
+  } */
+
+
+
+
 
 
 body{ 
