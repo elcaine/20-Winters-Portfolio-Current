@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #242424;
 }
 
 
@@ -13,14 +14,21 @@
 	box-sizing: border-box; 
 	margin: 0; 
 	padding: 0; 
-	transition: all 0.4s; 
+	transition: all 0.4s;
 } 
 
 main {
-	min-height: 100vh;
+	min-height: 90vh;
     display: flex;
     flex-direction: column;
 	margin-top: 25px;
+	background-color: black;
+	color: green;
+	outline: 2px dashed yellow;
+}
+
+.nav-link {
+	color: white;
 }
 
 .headers {
@@ -30,7 +38,7 @@ main {
     width: 100%;
     z-index: 999;
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-    /* background-color: #ffffff !important; */
+    background-color: #242424 !important;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding-top: 0px;
     padding-bottom: 0px;

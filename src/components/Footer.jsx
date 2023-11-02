@@ -1,23 +1,23 @@
 // import background from "../assets/background.svg";
-import background from "../assets/glasses.jpg";
+// import background from "../assets/glasses.jpg";
 import resumeDanielCaineWinters from '../assets/Daniel Caine Winters Resume.pdf';
 
 // Beginnings taken from: https://www.geeksforgeeks.org/how-to-create-a-simple-responsive-footer-in-react-js/
-import React from "react";
+// import React from "react";
 import {
-	Box,
-	FooterContainer,
+	// Box,
+	// FooterContainer,
 	Row,
 	Column,
 	FooterLink,
-	Heading,
+	// Heading,
 } from "./FooterStyles";
 
 
 
 const Footer = () => {
 	return (
-		<div style={{ backgroundImage: `url(${background})` }}>
+		<div /*style={{ backgroundImage: `url(${background})` }}*/>
 		{/* <Box> */}
 			<h1
 				style={{

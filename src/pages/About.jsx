@@ -8,7 +8,7 @@ function About() {
     return (
         <>
         <div>
-            <h1 className="text-3xl font-bold underline">The mighty migthy $$$ PORTFOLIO</h1>
+            <h1 className="text-3xl font-bold underline">Caine on the journey to now</h1>
         </div>
         
         

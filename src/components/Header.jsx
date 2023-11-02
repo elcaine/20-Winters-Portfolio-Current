@@ -1,12 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
-// import background from "../assets/background.svg";
-import background from "../assets/glasses.jpg";
+// import background from '../assets/backgroundb.svg';
+// import background from "../assets/glasses.jpg";
 
 function Header() {
     const currentPage = useLocation().pathname;
 
     return (
-      <ul className="nav nav-tabs" style={{ backgroundImage: `url(${background})` }}>
+      <ul className="nav nav-tabs" /*style={{ backgroundImage: `url(${background})` }}*/>
         <li className="nav-item">
           <Link
             to="/"
