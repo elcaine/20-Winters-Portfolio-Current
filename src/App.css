@@ -24,7 +24,7 @@ main {
 	margin-top: 25px;
 	background-color: black;
 	color: green;
-	outline: 2px dashed yellow;
+	outline: 2px dashed grey;
 }
 
 .nav-link {
@@ -43,24 +43,6 @@ main {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-/* .bodys {
-  padding: 4em 2em 50em 2em;
-  position: relative;
-} */
-
-/* .footers {
-	width: 100%;
-	border: .25rem solid var(--contrast--yellow);
-	text-align: center;
-	background-image: url("../images/header-background.jpg");
-	bottom:0;
-	left:0;
-  } */
-
-
-
-
-
 
 body{ 
 	font-family: sans-serif; 
@@ -191,3 +173,88 @@ cursor: pointer;
 .read-the-docs {
   color: #888;
 }
+
+
+
+
+
+
+
+
+
+
+
+.justifyCenter {
+	justify-content: center;
+  }
+  
+  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+  .cardColumn {
+	flex: 1 0 100%;
+	padding: 1.5rem;
+	/* when the screen resizes, make it so our columns don't jump in size */
+	transition: flex-basis 500ms linear;
+	margin-bottom: 1.5rem;
+  }
+  
+  /* make each code card a flexbox column to align and justify content within it */
+  .codeCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100%;
+	padding: 2rem;
+	color: pink;
+	background-color: #242424;
+	/* outline is like border, but on the outside of the box instead of inside */
+	outline: 2px dashed pink;
+	outline-offset: -.5rem;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .codeCard .cardHeader {
+	/* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+	position: relative;
+	margin: -4rem 0 1.5rem 0;
+	padding: 0.5rem 1rem;
+	background-color: #242424;
+	color: pink;
+	border: 2px solid pink;
+	border-radius: .5rem;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+  .codeCard .codeBlock {
+	flex-grow: 1;
+  }
+
+  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  @media screen and (min-width: 768px) {
+	/* on tablets, set columns to only be 50% of the width and not grow */
+	.cardColumn {
+	  flex: 0 0 50%;
+	  max-width: 50%;
+	}
+  
+	/* select the last child to grow to full width if it has space to grow */
+	.cardColumn:last-child {
+	  flex-grow: 1;
+	}
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+	.cardColumn {
+	  flex: 0 0 33.333%;
+	  max-width: 33.333%;
+	}
+  }
+  
+
+
+
+
+
+
+  

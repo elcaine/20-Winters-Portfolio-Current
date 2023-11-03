@@ -1,6 +1,6 @@
 // import background from "../assets/background.svg";
 // import background from "../assets/glasses.jpg";
-import resumeDanielCaineWinters from '../assets/Daniel Caine Winters Resume.pdf';
+import resumeDanielCaineWinters from '../assets/ResumeDoc.pdf';
 
 // Beginnings taken from: https://www.geeksforgeeks.org/how-to-create-a-simple-responsive-footer-in-react-js/
 // import React from "react";
