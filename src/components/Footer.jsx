@@ -42,6 +42,9 @@ const Footer = () => {
 					<Column>
 						<FooterLink href={resumeDanielCaineWinters} target="_blank">Resume</FooterLink>
 					</Column>
+					<Column>
+						<FooterLink href="https://www.linkedin.com/in/caine-winters-8b298520/" target="_blank">LinkedIn</FooterLink>
+					</Column>
 				</Row>
 			{/* </FooterContainer> */}
 		{/* </Box> */}
