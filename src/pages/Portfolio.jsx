@@ -14,7 +14,8 @@ function Portfolio() {
     return (
         <>
         <section id="projects"><h1>Projects</h1></section>
-        <div id="emphasizedProject">
+        <div id="emphasizedProject"
+          style={{ marginTop: '30px' }}>
             <figure className="card codeCard">
               <h2 className="cardHeader">Dynamic website with DB backend</h2>
               <div className="cardBody">

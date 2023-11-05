@@ -10,22 +10,24 @@ function App() {
   // const [count, setCount] = useState(0);
 
   return (
-    <>
-      <header className="headers"><Header />
-        <h2
+    <div style={{ overflowX: "hidden" }}>
+      <header><Header />
+        <h2 id="myName"
           style={{
             float: "right",
             marginTop: "-35px",
             color: "green",
-            textShadow: "1px 1px 10px gold",
+            textShadow: "1px 1px 10px grey",
           }}
         >
           D. Caine Winters
         </h2>
       </header>
+
       <main className="mx-3"><Outlet /></main>
+      
       <footer><Footer /></footer>
-    </>
+    </div>
   );
 }
 

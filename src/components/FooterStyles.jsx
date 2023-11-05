@@ -3,15 +3,15 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-	// padding: 5% 2.5%;
-	background: black;
-	// position: absolute;
+	padding: 5% 2.5%;
+	// background: #242424;
+	position: relative;
 	margin-top: auto;
 	bottom: 0;
 	width: 100%;
 
 	@media (max-width: 1000px) {
-		// padding: 70px 30px;
+		padding: 70px 30px;
 	}
 `;
 
@@ -19,9 +19,8 @@ export const FooterContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 1000px;
+	max-width: 7500px;
 	margin: 0 auto;
-	/* background: red; */
 `;
 
 export const Column = styled.div`
@@ -33,6 +32,7 @@ export const Column = styled.div`
 
 export const Row = styled.div`
 	display: grid;
+	align-items: center;
 	grid-template-columns: repeat(
 		auto-fill,
 		minmax(185px, 1fr)

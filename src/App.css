@@ -1,142 +1,146 @@
+/* Gradients source: https://gradients.shecodes.io/gradients/31 */
+
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
-  background-color: #242424;
+  background: linear-gradient(to bottom, #434343 0%, black 100%);
+
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #111 20%,
+    #333 100%,
+    #ddd 100%
+  ); */
 }
 
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+  transition: all 0.4s;
+}
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  background: linear-gradient(to top, #434343 0%, black 100%);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
-
-
-*{ 
-	box-sizing: border-box; 
-	margin: 0; 
-	padding: 0; 
-	transition: all 0.4s;
-} 
+footer {
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to top, #434343 0%, black 100%);
+  border-top: 1px solid #dee2e6;
+}
 
 main {
-	min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-	margin-top: 25px;
-	background-color: black;
-	color: green;
-	outline: 2px dashed grey;
+  /* min-height: 81vh; */
+  /* min-width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 69px;
+  /* xxx */
+  background: linear-gradient(to top, #434343 0%, black 100%);
+  color: green;
+  padding-bottom: 5%;
 }
 
 .nav-link {
-	color: white;
+  color: white;
 }
 
-.headers {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-    background-color: #242424 !important;
-    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-    padding-top: 0px;
-    padding-bottom: 0px;
+body {
+  font-family: sans-serif;
 }
-
-body{ 
-	font-family: sans-serif; 
-} 
-a{ 
-	text-decoration: none; 
-	color: black; 
-	font-size: 1.3rem; 
-	font-weight: bold; 
-} 
 
 /* navbar styling */
-.navbar{
-	display: flex; 
-	height: 5rem; 
-	justify-content: space-between; 
-	align-items: center; 
-	padding-top: 1rem; 
-	border-bottom: 2px solid rgb(223, 251, 219); 
-} 
-
-/* logo style */
-.logo img{ 
-	width: 4rem; 
-	height: 4rem; 
-	margin-left:1rem; 
-} 
-
-.hamburger-menu{ 
-	padding-right: 1.5rem; 
-	cursor: pointer; 
-} 
-
-.hamburger-menu .line{ 
-display: block; 
-width:2.5rem; 
-height: 2px; 
-margin-bottom: 10px; 
-background-color: black; 
-cursor: pointer; 
-} 
-
-.nav-menu{ 
-	position: fixed; 
-	width: 94%; 
-	top: 6rem; 
-	left: 18px; 
-	background-color: rgb(255, 255, 255); 
-	font-weight: 600; 
-
-} 
-.nav-menu a{ 
-	display: block; 
-	text-align: center; 
-	padding: 5px 0; 
-} 
-.nav-menu a:hover{ 
-	background-color: rgb(223, 251, 219); 
-} 
-
-.hide{ 
-	display: none; 
-} 
-
-/* for Desktop view */
-@media screen and (min-width:600px){ 
-	.navbar{ 
-		justify-content: space-around; 
-	} 
-	.nav-menu{ 
-		display: block; 
-		position: static; 
-		width: auto; 
-		margin-right:20px; 
-		background: none; 
-	} 
-	.nav-menu a{ 
-		display: inline-block; 
-		padding: 15px 20px; 
-	} 
-	.nav-menu a:hover{ 
-		background-color: rgb(223, 251, 219); 
-		border-radius: 5px; 
-	} 
-	.hamburger-menu{ 
-		display: none; 
-	} 
+.navbar {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-bottom: 2px solid rgb(223, 251, 219);
 }
 
+/* logo style */
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
 
+.hamburger-menu {
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
 
+.hamburger-menu .line {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: black;
+  cursor: pointer;
+}
 
+.nav-menu {
+  position: fixed;
+  width: 94%;
+  top: 6rem;
+  left: 18px;
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.nav-menu a {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+.nav-menu a:hover {
+  background-color: rgb(223, 251, 219);
+}
 
+.hide {
+  display: none;
+}
 
+/* for Desktop view */
+@media screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-around;
+  }
+  .nav-menu {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+  .nav-menu a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .nav-menu a:hover {
+    background-color: rgb(223, 251, 219);
+    border-radius: 5px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
 
 .logo {
   height: 6em;
@@ -145,13 +149,53 @@ cursor: pointer;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  /* background-color: black; */
+  border-radius: 5px;
+  /* filter: drop-shadow(0 0 2em #61dafbaa); */
+  box-shadow: 0 0 24px 24px gold;
+  /* box-shadow: 3px 3px red, -1em 0 .4em olive; */
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes logo-spin {
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Rotating logos from npx create-react-app */
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -159,106 +203,97 @@ cursor: pointer;
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .logo:hover {
+    animation: logo-spin infinite 13s linear;
   }
-}
+} */
 
 .card {
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
-
-
-
-
-
-
-
-
-
-
+/* Keeps all cards in projects together */
 .justifyCenter {
-	justify-content: center;
-  }
-  
-  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-  .cardColumn {
-	flex: 1 0 100%;
-	padding: 1.5rem;
-	/* when the screen resizes, make it so our columns don't jump in size */
-	transition: flex-basis 500ms linear;
-	margin-bottom: 1.5rem;
-  }
-  
-  /* make each code card a flexbox column to align and justify content within it */
-  .codeCard {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	min-height: 100%;
-	padding: 2rem;
-	color: pink;
-	background-color: #242424;
-	/* outline is like border, but on the outside of the box instead of inside */
-	outline: 2px dashed pink;
-	outline-offset: -.5rem;
-	transition: all 0.5s ease-in-out;
-  }
-  
-  .codeCard .cardHeader {
-	/* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-	position: relative;
-	margin: -4rem 0 1.5rem 0;
-	padding: 0.5rem 1rem;
-	background-color: #242424;
-	color: pink;
-	border: 2px solid pink;
-	border-radius: .5rem;
-	transition: all 0.5s ease-in-out;
-  }
-  
-  /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-  .codeCard .codeBlock {
-	flex-grow: 1;
-  }
-
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-  @media screen and (min-width: 768px) {
-	/* on tablets, set columns to only be 50% of the width and not grow */
-	.cardColumn {
-	  flex: 0 0 50%;
-	  max-width: 50%;
-	}
-  
-	/* select the last child to grow to full width if it has space to grow */
-	.cardColumn:last-child {
-	  flex-grow: 1;
-	}
-  }
-  
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
-	.cardColumn {
-	  flex: 0 0 33.333%;
-	  max-width: 33.333%;
-	}
-  }
-  
-
-
-
-
-
-
-  
-img {
-	max-width:100%;
-	max-height:100%;
+  justify-content: center;
 }
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.cardColumn {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+/* make each code card a flexbox column to align and justify content within it */
+.codeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: pink;
+  background-color: #242424;
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px dashed pink;
+  outline-offset: -0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.codeCard .cardHeader {
+  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #242424;
+  color: pink;
+  border: 2px solid pink;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+.codeCard .codeBlock {
+  flex-grow: 1;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .cardColumn {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .cardColumn:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  .cardColumn {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+/* Set this to keep project images in their cards */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	#myName {
+	  visibility: hidden;
+	  clear: both;
+	  float: left;
+	  margin: 10px auto 5px 20px;
+	  width: 28%;
+	  display: none;
+	}
+  }
