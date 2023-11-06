@@ -7,6 +7,11 @@ import imgInputG from '../assets/projects-inputGolf.jpg';
 import imgMinesweeper from '../assets/projects-minesweeper.jpg';
 import imgPrimes from '../assets/projects-primes.jpg';
 import imgKorn from '../assets/projects-korn.jpg';
+import iconGithub from "../assets/svgGithub.svg"; //	Source: www.github.com
+
+const goGit = (e) => {
+  console.log('$$$$$$$$$. ', e);
+}
 
 function Portfolio() {
     
@@ -17,7 +22,9 @@ function Portfolio() {
         <div id="emphasizedProject"
           style={{ marginTop: '30px' }}>
             <figure className="card codeCard">
-              <h2 className="cardHeader">Dynamic website with DB backend</h2>
+              <h2 className="cardHeader">Dynamic website with DB backend
+                <a href="https://github.com/elcaine/FindIt" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
                 <p>2nd major group poject in bootcamp:  MySQL DB utilized backend built with libraries such as Handlebars, JQuery, Express, and Sequelize. 
                   <span>*Note: Link will not function after project graded due to Heroku dynos being reverted to $0 plan. </span></p>
@@ -32,7 +39,9 @@ function Portfolio() {
         <section className="row justifyCenter">
           <div className="cardColumn">
             <figure className="card codeCard">
-              <h2 className="cardHeader">Joke Translator</h2>
+              <h2 className="cardHeader">Joke Translator
+                <a href="https://github.com/sfrancesny/Joke-Translator" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
                 <p>1st major group poject in bootcamp:  interactive website dependent on two external server-side APIs.  Fetches joke and translates it into Yoda-speak. 
                   <span>*Note: Link will not function after project graded due to Heroku dynos being reverted to $0 plan. </span></p>
@@ -46,9 +55,11 @@ function Portfolio() {
         
           <div className="cardColumn">
             <figure className="card codeCard">
-              <h2 className="cardHeader">Study guide</h2>
+              <h2 className="cardHeader">Study guide
+                <a href="https://github.com/elcaine/prework-study-guide" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
-                <p>Studyguide for Full Stack bootcamp -- a simple website.</p>
+                <p>Studyguide for Full Stack bootcamp -- a simple website (the very first I ever made).</p>
               </div>
                 <a className="center" href="https://elcaine.github.io/prework-study-guide/"
                   target="_blank">
@@ -60,7 +71,9 @@ function Portfolio() {
          
           <div className="cardColumn">
             <figure className="card codeCard">
-              <h2 className="cardHeader">Input Golf</h2>
+              <h2 className="cardHeader">Input Golf
+                <a href="https://github.com/discodamone/Input_Golf" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
                 <p>Quiz-based web game teaching cybersecurity.</p>
               </div>
@@ -73,7 +86,9 @@ function Portfolio() {
         
           <div className="cardColumn">
             <figure className="card codeCard">
-              <h2 className="cardHeader">Minesweeper</h2>
+              <h2 className="cardHeader">Minesweeper
+                <a href="https://github.com/elcaine/Minesweeper" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
                 <p>Point-&-click remake of the classNameic Microsoft game.</p>
               </div>
@@ -85,7 +100,9 @@ function Portfolio() {
           </div>
           <div className="cardColumn">
             <figure className="card codeCard">
-              <h2 className="cardHeader">Ten digit primes hunt</h2>
+              <h2 className="cardHeader">Ten-digit primes hunt
+                <a href="https://github.com/elcaine/findTen" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
                 <p>Find 10-digit primes from concatenated Fibonacci sequence.</p>
               </div>
@@ -97,7 +114,9 @@ function Portfolio() {
           </div>
           <div className="cardColumn">
             <figure className="card codeCard">
-              <h2 className="cardHeader">Korn like interface</h2>
+              <h2 className="cardHeader">Korn like interface
+                <a href="https://github.com/elcaine/nutShellProjectRepo" target="_blank"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
               <div className="cardBody">
                 <p>Command line shell application attempting to emulate KornShell.</p>
               </div>

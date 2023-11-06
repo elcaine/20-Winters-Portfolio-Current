@@ -1,20 +1,12 @@
 /* Gradients source: https://gradients.shecodes.io/gradients/31 */
 
+/*************** Roots, astericks, and primary tags ***************/
 #root {
   /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
   background: linear-gradient(to bottom, #434343 0%, black 100%);
-
-  /* background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    #111 20%,
-    #333 100%,
-    #ddd 100%
-  ); */
 }
 
 * {
@@ -29,8 +21,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
-  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  z-index: 99;
+  /* box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%); */
   background: linear-gradient(to top, #434343 0%, black 100%);
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   padding-top: 0px;
@@ -50,19 +42,20 @@ main {
   /* min-width: 100vw; */
   display: flex;
   flex-direction: column;
-  margin-top: 69px;
+  /* margin-top: 69px; */
   /* xxx */
   background: linear-gradient(to top, #434343 0%, black 100%);
   color: green;
-  padding-bottom: 5%;
-}
-
-.nav-link {
-  color: white;
+  /* padding-bottom: 5%; */
 }
 
 body {
   font-family: sans-serif;
+}
+
+/*************** Header elements ***************/
+.nav-link {
+  color: white;
 }
 
 /* navbar styling */
@@ -73,27 +66,6 @@ body {
   align-items: center;
   padding-top: 1rem;
   border-bottom: 2px solid rgb(223, 251, 219);
-}
-
-/* logo style */
-.logo img {
-  width: 4rem;
-  height: 4rem;
-  margin-left: 1rem;
-}
-
-.hamburger-menu {
-  padding-right: 1.5rem;
-  cursor: pointer;
-}
-
-.hamburger-menu .line {
-  display: block;
-  width: 2.5rem;
-  height: 2px;
-  margin-bottom: 10px;
-  background-color: black;
-  cursor: pointer;
 }
 
 .nav-menu {
@@ -109,39 +81,30 @@ body {
   text-align: center;
   padding: 5px 0;
 }
-.nav-menu a:hover {
-  background-color: rgb(223, 251, 219);
-}
 
-.hide {
-  display: none;
+#myName {
+  float: right;
+  margin-top: -35px;
+  color: black;
+  box-shadow: 0 0 23px 23px gold, inset 0 0 23px 13px gold;
 }
-
-/* for Desktop view */
-@media screen and (min-width: 600px) {
-  .navbar {
-    justify-content: space-around;
-  }
-  .nav-menu {
-    display: block;
-    position: static;
-    width: auto;
-    margin-right: 20px;
-    background: none;
-  }
-  .nav-menu a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-  .nav-menu a:hover {
-    background-color: rgb(223, 251, 219);
-    border-radius: 5px;
-  }
-  .hamburger-menu {
+@media screen and (max-width: 600px) {
+  #myName {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
     display: none;
+
+    float: right;
+    margin-top: -35px;
+    color: black;
+    box-shadow: 0 0 23px 23px gold, inset 0 0 23px 13px gold;
   }
 }
 
+/*************** Footer elements ***************/
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -149,11 +112,8 @@ body {
   transition: filter 300ms;
 }
 .logo:hover {
-  /* background-color: black; */
   border-radius: 5px;
-  /* filter: drop-shadow(0 0 2em #61dafbaa); */
   box-shadow: 0 0 24px 24px gold;
-  /* box-shadow: 3px 3px red, -1em 0 .4em olive; */
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -194,20 +154,23 @@ body {
   }
 }
 
-/* Rotating logos from npx create-react-app */
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*************** Project tab card elements ***************/
+.gitIcons {
+  /* height: 6em; */
+  padding: .5em;
+  will-change: filter;
+  transition: filter 300ms;
+
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .logo:hover {
-    animation: logo-spin infinite 13s linear;
-  }
-} */
+.gitIcons:hover {
+  border-radius: 5px;
+  box-shadow: inset 0 0 24px 24px gold;
+  /* animation: shake 0.5s; */
+  animation-iteration-count: infinite;
+}
 
 .card {
   padding: 2em;
@@ -234,12 +197,17 @@ body {
   justify-content: flex-start;
   min-height: 100%;
   padding: 2rem;
-  color: pink;
+  color: green;
   background-color: #242424;
-  /* outline is like border, but on the outside of the box instead of inside */
-  outline: 2px dashed pink;
+  outline: 2px dashed green;
   outline-offset: -0.5rem;
   transition: all 0.5s ease-in-out;
+}
+
+.codeCard:hover {
+  color: yellow;
+  background-color: #898989;
+  outline: 2px dashed yellow;
 }
 
 .codeCard .cardHeader {
@@ -248,8 +216,8 @@ body {
   margin: -4rem 0 1.5rem 0;
   padding: 0.5rem 1rem;
   background-color: #242424;
-  color: pink;
-  border: 2px solid pink;
+  color: green;
+  border: 2px solid green;
   border-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -287,13 +255,70 @@ img {
   max-height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-	#myName {
-	  visibility: hidden;
-	  clear: both;
-	  float: left;
-	  margin: 10px auto 5px 20px;
-	  width: 28%;
-	  display: none;
-	}
+#contactForm {
+  width: 75%;
+  margin: auto;
+  display: block;
+  /* display: grid; */
+  place-items: center;
+}
+
+/* logo style */
+/* .logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+} */
+
+/* .hamburger-menu {
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: black;
+  cursor: pointer;
+} */
+
+/* for Desktop view */
+/* @media screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-around;
   }
+  .nav-menu {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+  .nav-menu a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .nav-menu a:hover {
+    background-color: rgb(223, 251, 219);
+    border-radius: 5px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+} */
+
+
+
+.button {
+  border-radius: 28px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: green;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}

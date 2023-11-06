@@ -13,6 +13,7 @@ function Header() {
         <Link
           to="/About"
           className={currentPage === "/About" ? "nav-link active" : "nav-link"}
+          style={{ color: "green" }}
         >
           About Me
         </Link>
@@ -20,9 +21,8 @@ function Header() {
       <li className="nav-item">
         <Link
           to="/Portfolio"
-          className={
-            currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
-          }
+          className={currentPage === "/Portfolio" ? "nav-link active" : "nav-link"}
+          style={{ color: "green" }}
         >
           Portfolio
         </Link>
@@ -30,9 +30,8 @@ function Header() {
       <li className="nav-item">
         <Link
           to="/Contact"
-          className={
-            currentPage === "/Contact" ? "nav-link active" : "nav-link"
-          }
+          className={currentPage === "/Contact" ? "nav-link active" : "nav-link"}
+          style={{ color: "green" }}
         >
           Contact
         </Link>
@@ -41,6 +40,7 @@ function Header() {
         <Link
           to="/Resume"
           className={currentPage === "/Resume" ? "nav-link active" : "nav-link"}
+          style={{ color: "green" }}
         >
           Resume
         </Link>

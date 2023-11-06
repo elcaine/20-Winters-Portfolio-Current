@@ -4,27 +4,16 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 // import About from './pages/About.jsx';
 import Footer from "./components/Footer.jsx";
-// import background from "./assets/glasses.jpg";
+// import backgrdound from "./assets/glasses.jpg";
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <div style={{ overflowX: "hidden" }}>
-      <header><Header />
-        <h2 id="myName"
-          style={{
-            float: "right",
-            marginTop: "-35px",
-            color: "green",
-            textShadow: "1px 1px 10px grey",
-          }}
-        >
-          D. Caine Winters
-        </h2>
-      </header>
+      <header><Header /><h2 id="myName">&nbsp; D. Caine Winters &nbsp;</h2></header>
 
-      <main className="mx-3"><Outlet /></main>
+      <main ><Outlet /></main>
       
       <footer><Footer /></footer>
     </div>

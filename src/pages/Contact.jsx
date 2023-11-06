@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import imgMoreGlasses from "../assets/moreGlasses.jpg";
 
 function Contact() {
   const [email, setEmail] = useState('');
@@ -28,7 +29,6 @@ function Contact() {
       setErrorMessage('Email or username is invalid');
       return;
     }
-    // alert(`Hello ${userName}\nemail: ${email}\nmsg: ${comment}`);
 
     setUserName('');
     setComment('');
@@ -36,35 +36,52 @@ function Contact() {
     return ( window.open(`mailto:caine.winters@outlook.com?subject=Contact inquiry from React profile&body=${comment}%0D%0A%0D%0AThank you,%0D%0A${userName}`) );
   };
 
+  const handleMouseLeave = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+    
+    if(!inputValue) { alert(`${inputType} cannot be left blank!`); }
+  };
+
   return (
+    <>
     <div className="container text-center">
       <h1>Hello {userName}</h1>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <form className="codeCard" id="contactForm" onSubmit={handleFormSubmit}>
         <input
           value={userName}
           name="userName"
           onChange={handleInputChange}
+          onMouseLeave={handleMouseLeave}
           type="text"
           placeholder="Name"
+          autoComplete="name"
+          style={{ width: "69%", margin: "auto", display: "block",  }}
         />
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
+          onMouseLeave={handleMouseLeave}
           type="email"
           placeholder="email"
+          autoComplete="email"
+          style={{ width: "69%"}}
         />
         <div>
         <textarea
           value={comment}
           name="comment"
           onChange={handleInputChange}
+          onMouseLeave={handleMouseLeave}
           type="text"
           placeholder="Enter comments here"
-          rows={10} cols={40}
+          autoComplete="off"
+          rows={10} cols={39}
         ></textarea>
         </div>
-        <div><button type="submit">Submit</button></div>
+        <div><button type="submit" className="button">Submit</button></div>
       </form>
       {errorMessage && (
         <div>
@@ -72,6 +89,12 @@ function Contact() {
         </div>
       )}
     </div>
+
+    
+<div>
+<img src={imgMoreGlasses} alt="Another painting of glasses"/>
+</div>
+</>
   );
 }
 
