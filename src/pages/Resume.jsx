@@ -1,5 +1,6 @@
-import ResumeDoc from '../assets/ResumeDoc.pdf';
+// Source:  https://pixabay.com/illustrations/steering-computer-science-7673519/
 import graphic from '../assets/growGraphic.jpg';
+import ResumeDoc from '../assets/ResumeDoc.pdf';
 
 export default function Resume() {
   return (
