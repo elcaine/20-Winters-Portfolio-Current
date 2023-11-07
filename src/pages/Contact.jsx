@@ -92,7 +92,12 @@ function Contact() {
 
     
 <div>
-<img src={imgMoreGlasses} alt="Another painting of glasses"/>
+<img src={imgMoreGlasses} alt="Another painting of glasses" style={{ 
+        maxWidth: "75%",
+        paddingTop: "50px",
+        paddingBottom: "130px",
+        }}
+/>
 </div>
 </>
   );

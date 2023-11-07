@@ -2,7 +2,7 @@
 # 20-Projects-Profile
 
 ## Description
-This is a REACT web app that showcases some of snippet-portfolio of my projects to date.
+This is a REACT web app that showcases some snippets of my portfolio projects to date.
 
 
 ### By: Caine Winters
@@ -23,13 +23,3 @@ This is a REACT web app that showcases some of snippet-portfolio of my projects 
 ### Acknowledged sources
 - Started with code from original html/css-only project from beginning of class.
 - Other sources cited throughout code.
-
-
-
-
-
-
-
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

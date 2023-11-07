@@ -29,7 +29,10 @@ function About() {
       </div>
 
       <div>
-      <img src={imgGlasses} alt="Painting of glasses"/>
+      <img src={imgGlasses} alt="Painting of glasses" style={{ 
+        maxWidth: "75%",
+        paddingBottom: "120px",
+        }}/>
       </div>
     </>
   );

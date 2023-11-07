@@ -1,6 +1,3 @@
-// import background from "../assets/background.svg";
-// import background from "../assets/glasses.jpg";
-
 import iconGithub from "../assets/svgGithub.svg"; //	Source: www.github.com
 import iconEmail from "../assets/svgEmail.svg"; //	Source: www.svgrepo.com
 import iconInsta from "../assets/svgInstagram.svg"; //	Source: www.svgrepo.com
@@ -16,18 +13,15 @@ import {
   Row,
   Column,
   FooterLink,
-  // Heading,
 } from "./FooterStyles";
 
 const Footer = () => {
   return (
-    // <div /*style={{ backgroundImage: `url(${background})` }}*/>
     <Box>
       <h1
         style={{
           color: "green",
           textAlign: "center",
-          marginTop: "10px",
         }}
       >
         Connect with Caine
@@ -41,30 +35,33 @@ const Footer = () => {
               <img src={iconPhone} className="logo" alt="Phone icon" />
             </FooterLink>
 
-            <FooterLink href="https://github.com/elcaine" target="_blank">
+            <FooterLink href="https://github.com/elcaine" target="_blank" rel="noreferrer">
               <img src={iconGithub} className="logo" alt="Github icon" />
             </FooterLink>
 
             <FooterLink href="mailto:caine.winters@outlook.com">
               <img src={iconEmail} className="logo" alt="Email icon" />
             </FooterLink>
+          </Row>
 
-            <FooterLink href={resumeDanielCaineWinters} target="_blank">
+          <Row
+            style={{ justifyItems: "center" }}
+          >
+            <FooterLink href={resumeDanielCaineWinters} target="_blank" rel="noreferrer">
               <img src={iconCv} className="logo" alt="Resume icon" />
             </FooterLink>
 
-            <FooterLink href="https://www.linkedin.com/in/caine-winters-8b298520/" target="_blank">
+            <FooterLink href="https://www.linkedin.com/in/caine-winters-8b298520/" target="_blank" rel="noreferrer">
               <img src={iconLinkedin} className="logo" alt="LinkedIn icon" />
             </FooterLink>
 
-            <FooterLink href="https://www.instagram.com/caine314159" target="_blank">
+            <FooterLink href="https://www.instagram.com/caine314159" target="_blank" rel="noreferrer">
               <img src={iconInsta} className="logo" alt="Instagram icon" />
             </FooterLink>
           </Row>
         </Column>
       </FooterContainer>
     </Box>
-    // </div>
   );
 };
 export default Footer;

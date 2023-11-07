@@ -10,7 +10,12 @@ export default function Resume() {
     </div>
 
     <div>
-      <img src={graphic} alt="Inspirational and techy graphic" />
+      <img src={graphic} alt="Inspirational and techy graphic" style={{ 
+        maxWidth: "75%",
+        paddingTop: "50px",
+        paddingBottom: "130px",
+        }}
+/>
     </div>
     </>
   );
