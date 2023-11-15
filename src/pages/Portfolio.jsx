@@ -1,5 +1,6 @@
 import imgProj1 from '../assets/projects-proj1.jpg';
 import imgProj2 from '../assets/projects-proj2.jpg';
+import imgProj3 from '../assets/projects-proj3.jpg';
 import imgStudyG from '../assets/projects-studyGuide.jpg';
 import imgInputG from '../assets/projects-inputGolf.jpg';
 import imgMinesweeper from '../assets/projects-minesweeper.jpg';
@@ -8,29 +9,44 @@ import imgKorn from '../assets/projects-korn.jpg';
 import iconGithub from "../assets/svgGithub.svg"; //	Source: www.github.com
 
 function Portfolio() {
-    
-
+  
     return (
         <>
         <section id="projects"><h1>Projects</h1></section>
         <div id="emphasizedProject"
           style={{ marginTop: '30px' }}>
             <figure className="card codeCard">
-              <h2 className="cardHeader">Dynamic website with DB backend
-                <a href="https://github.com/elcaine/FindIt" target="_blank" rel="noreferrer"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              <h2 className="cardHeader">Tutors-For-Hire Web App
+                <a href="https://github.com/Hans-Doderlein/Hello-Software" target="_blank" rel="noreferrer"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
               </h2>
               <div className="cardBody">
-                <p>2nd major group poject in bootcamp:  MySQL DB utilized backend built with libraries such as Handlebars, JQuery, Express, and Sequelize. 
-                  <span>*Note: Link will not function after project graded due to Heroku dynos being reverted to $0 plan. </span></p>
+                <p>Final major group poject in bootcamp: Ecommerce web app utilizing all material learned in class -- full MERN stack.
+                  <span>*Note: Link may not function after project graded due to Heroku dynos being reverted to $0 plan. </span></p>
               </div>
-              <a className="center" href="https://find-it-p2-c5abd3d95f03.herokuapp.com/"
+              <a className="center" href="https://hello-software-37812ef8ef64.herokuapp.com/"
                 target="_blank" rel="noreferrer">
-                  <img src={imgProj2} alt='Screenshot of FindIt app' className='center' style={{ maxWidth: "75%"}}></img>
+                  <img src={imgProj3} alt='Screenshot of Hello Tutor app' className='center' style={{ maxWidth: "75%"}}></img>
                 </a>
             </figure>
         </div>
         
         <section className="row justifyCenter">
+          <div className="cardColumn">
+            <figure className="card codeCard">
+              <h2 className="cardHeader">Dynamic website with DB backend
+                <a href="https://github.com/elcaine/FindIt" target="_blank" rel="noreferrer"><img src={iconGithub} className="gitIcons" alt="Github icon" /></a>
+              </h2>
+              <div className="cardBody">
+              <p>2nd major group poject in bootcamp:  MySQL DB utilized backend built with libraries such as Handlebars, JQuery, Express, and Sequelize. 
+                  <span>*Note: Link will not function after project graded due to Heroku dynos being reverted to $0 plan. </span></p>
+              </div>
+              <a className="center" href="https://find-it-p2-c5abd3d95f03.herokuapp.com/"
+                target="_blank" rel="noreferrer">
+                <img src={imgProj2} alt='Screenshot of Hello Tutor app' className='center'></img>
+                </a>
+            </figure>
+        </div>
+        
           <div className="cardColumn">
             <figure className="card codeCard">
               <h2 className="cardHeader">Joke Translator
